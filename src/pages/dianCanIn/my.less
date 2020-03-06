@@ -1,0 +1,131 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cl {
+  clear: both;
+}
+
+// .fanhui {
+//     height: 120px;
+//     width: 200px;
+//     border: solid 1px red;
+//     font-size: 30px;
+//     text-align: center;
+//     line-height: 180px;
+//     background: #fff;
+//     padding-left: 30px;
+// }
+
+.dianCanIn {
+  height: 100%;
+  // position: relative;
+  // background: #c9f;
+  // top: 0px;
+  // right: 0px;
+  // bottom: 0px;
+  // left: 0px;
+  font-size: 0px;
+
+}
+
+.toplist {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: #fff;
+}
+
+.toplist1 {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  // padding: 3vw 0vw;
+  // border: red solid 1px;
+}
+
+.toplist1>p {
+  padding: 3vw 0vw;
+  font-size: 1.5rem;
+  // margin: 0px auto;
+
+  display: inline-block;
+  // height: 100%;
+}
+
+// .toplist1>p:hover {
+//   border-bottom: #c9f solid 2px;
+//   color: #c9f;
+// }
+
+.active {
+  border-bottom: #c9f solid 2px;
+  color: #c9f;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.clear:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.navCon {
+  font-size: 15px;
+  // border: red solid 1px;
+
+  .navLeft,
+  .navCen,
+  .navRight {
+    flex: 1;
+    text-align: center;
+    border-bottom: solid #ccc 1px;
+
+  }
+
+  a {
+    padding: 10px 0px;
+    display: block;
+    font-size: 17px;
+    color: rgb(77, 85, 93);
+
+    &.router-link-active {
+      color: rgb(240, 20, 20);
+      // border-bottom: 1px solid #c9f;
+    }
+  }
+
+
+
+}
+
+/* 子容器布局*/
+.app-entry-rv-ctn {
+  display: flex;
+  position: absolute;
+  top: 185px;
+  bottom: 50px;
+  // width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  // border: solid 1px red;
+}
+
+/* 子容器布局__end*/
+// .shopcart-con {
+//   position: absolute;
+//   top: 185px;
+//   bottom: 46px;
+//   // width: 100%;
+//   overflow: hidden;
+//   z-index: 10;
+//   border: solid 1px red;
+// }

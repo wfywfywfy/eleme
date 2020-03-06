@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="xue" id="xue"></div>
+  <script>
+    window.onload = function () {
+      let xue = document.getElementById("xue")
+      // console.log(xue.className, 777);
+      // console.log(xue);
+      // var re = new RegExp("\\w+");
+      // console.log(re, 777);
+      // console.log(typeof re);
+      var pattern = /^\s*(.+?)\s*$/;
+      console.log(xue.className.replace(pattern, "$1") + " " + 'ppp', 777);
+
+      function hasClass(el, className) {
+        let reg = new RegExp("(^|\\s)" + className + "(\\s|$)");
+
+        // console.log(xue.className.replace(new RegExp("(\\s|^)" + 'xue' + "(\\s|$)"), ""), 777);
+        return reg.test(el.className);
+      }
+      console.log(hasClass(xue, 'xue'));
+    }
+
+  </script>
+</body>
+
+</html>
